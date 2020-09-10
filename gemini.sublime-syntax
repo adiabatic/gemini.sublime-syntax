@@ -25,9 +25,9 @@ contexts:
           $\n?
         )
       captures:
-        1: markup.quote.gemini
-        2: markup.underline.link
-        3: markup.heading.gemini
+        1: punctuation.definition.annotation.gemini
+        2: markup.underline.link.gemini
+        3: text.gemini
       
     - scope: markup.list.unnumbered
       match: '^\* .*$\n?'
