@@ -3,7 +3,7 @@
 # https://www.sublimetext.com/docs/3/syntax.html
 name: Gemini
 file_extensions: [gemini, gmi]
-scope: source.gemini
+scope: text.gemini
 contexts:
   main:
     - scope: markup.heading.gemini
