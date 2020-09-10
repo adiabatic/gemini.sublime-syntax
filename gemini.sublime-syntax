@@ -6,9 +6,11 @@ file_extensions: [gemini, gmi]
 scope: source.gemini
 contexts:
   main:
-    - match: '#.*$\n?'
-      scope: markup.heading.gemini
-    - match: '=>[:blank:]*.*$\n?'
-      scope: markup.underline.link
-    - match: '\* .*$\n?'
-      scope: markup.list.unnumbered
+    - scope: markup.heading.gemini
+      match: '#.*$\n?'
+      
+    - scope: markup.underline.link
+      match: '=>[:blank:]*.*$\n?'
+      
+    - scope: markup.list.unnumbered
+      match: '\* .*$\n?'
