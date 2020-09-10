@@ -8,21 +8,21 @@ scope: text.gemini
 contexts:
   main:
     - scope: markup.heading.gemini
-      match: '#.*$\n?'
+      match: '^#.*$\n?'
       
     - scope: markup.underline.link
       match: '=>[:blank:]*.*$\n?'
       
     - scope: markup.list.unnumbered
-      match: '\* .*$\n?'
+      match: '^\* .*$\n?'
 
     - scope: markup.quote
-      match: '>[:blank:]*.*$\n?'
+      match: '^>[:blank:]*.*$\n?'
 
     - scope: markup.preformatted # non-standard
       push: preformatted
-      match: '```.*$'
+      match: '^```.*$'
   
   preformatted:
-    - match: '```'
+    - match: '^```'
       pop: true
