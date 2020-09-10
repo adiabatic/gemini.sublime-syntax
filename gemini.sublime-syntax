@@ -10,3 +10,5 @@ contexts:
       scope: markup.heading.gemini
     - match: '=>[:blank:]*.*$\n?'
       scope: markup.underline.link
+    - match: '\* .*$\n?'
+      scope: markup.list.unnumbered
