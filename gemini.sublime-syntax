@@ -10,8 +10,7 @@ contexts:
     - scope: markup.heading.gemini
       match: '^#.*$\n?'
       
-    - #scope: markup.underline.link
-      # For some reason, [:blank:] doesn’t work here
+    - # For some reason, [:blank:] doesn’t work here
       match: |-
         (?x:
           ^
