@@ -1,6 +1,7 @@
 %YAML 1.2
 ---
 # https://www.sublimetext.com/docs/3/syntax.html
+# https://www.sublimetext.com/docs/3/scope_naming.html
 name: Gemini
 file_extensions: [gemini, gmi]
 scope: text.gemini
@@ -17,3 +18,11 @@ contexts:
 
     - scope: markup.quote
       match: '>[:blank:]*.*$\n?'
+
+    - scope: markup.preformatted # non-standard
+      push: preformatted
+      match: '```.*$'
+  
+  preformatted:
+    - match: '```'
+      pop: true
