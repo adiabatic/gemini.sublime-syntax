@@ -11,10 +11,11 @@ contexts:
       match: '^#.*$\n?'
       
     - #scope: markup.underline.link
-      match: '^(=>)[:blank:]*([:^blank:][:blank:]*.*)$\n?'
+      match: '^(=>) (\S+) (.*)$\n?'
       captures:
-        1: markup.quote
+        1: markup.quote.gemini
         2: markup.underline.link
+        3: markup.heading.gemini
       
     - scope: markup.list.unnumbered
       match: '^\* .*$\n?'
