@@ -12,7 +12,18 @@ contexts:
       
     - #scope: markup.underline.link
       # For some reason, [:blank:] doesn’t work here
-      match: '^(=>)[\t\x20]*(\S+)(?:[\t\x20]+(.*))?$\n?'
+      match: |-
+        (?x:
+          ^
+          (=>)
+          [\t\x20]*       # optional pre-link whitespace
+          (\S+)           # the link
+          (?:             # optional link description chunk
+            [\t\x20]+
+            (.*)          # (optional) link description
+          )?
+          $\n?
+        )
       captures:
         1: markup.quote.gemini
         2: markup.underline.link
