@@ -11,7 +11,7 @@ contexts:
       match: '^#.*$\n?'
       
     - #scope: markup.underline.link
-      match: '^(=>) (\S+) (.*)$\n?'
+      match: '^(=>)[\t\x20]*(\S+) (.*)$\n?'
       captures:
         1: markup.quote.gemini
         2: markup.underline.link
