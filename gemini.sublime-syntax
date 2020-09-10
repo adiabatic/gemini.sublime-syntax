@@ -14,3 +14,6 @@ contexts:
       
     - scope: markup.list.unnumbered
       match: '\* .*$\n?'
+
+    - scope: markup.quote
+      match: '>[:blank:]*.*$\n?'
