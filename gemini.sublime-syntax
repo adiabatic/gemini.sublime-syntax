@@ -11,7 +11,8 @@ contexts:
       match: '^#.*$\n?'
       
     - #scope: markup.underline.link
-      match: '^(=>)[\t\x20]*(\S+)(?: (.*))?+$\n?'
+      # For some reason, [:blank:] doesn’t work here
+      match: '^(=>)[\t\x20]*(\S+)(?:[\t\x20]+(.*))?$\n?'
       captures:
         1: markup.quote.gemini
         2: markup.underline.link
