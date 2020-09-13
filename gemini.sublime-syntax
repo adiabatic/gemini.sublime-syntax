@@ -3,7 +3,7 @@
 # https://www.sublimetext.com/docs/3/syntax.html
 # https://www.sublimetext.com/docs/3/scope_naming.html
 name: Gemini
-file_extensions: [gemini, gmi]
+file_extensions: [gemini, gmi, mollyhead]
 scope: text.gemini
 contexts:
   main:
