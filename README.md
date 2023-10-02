@@ -1,6 +1,6 @@
 # Sublime syntax for Gemini files
 
-[gemini]: https://gemini.circumlunar.space/
+[gemini]: https://geminiprotocol.net/
 [bat]:    https://github.com/sharkdp/bat
 
 [Gemini][] is a protocol in between Gopher and HTTP. It comes with its own text format that’s something like Gopher-inspired Markdown-lite.
